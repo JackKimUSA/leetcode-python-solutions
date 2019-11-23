@@ -28,6 +28,6 @@ print(Sol.numJewelsInStones(J,S))
 
 """
 Submissions:
-Runtime: 40 ms, faster than 39.99% of Python3 online submissions for Jewels and Stones.
-Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Jewels and Stones.
+Runtime: 28 ms, faster than 94.82% of Python3 online submissions for Jewels and Stones.
+Memory Usage: 12.6 MB, less than 100.00% of Python3 online submissions for Jewels and Stones.
 """
