@@ -3,7 +3,7 @@
 """
 Created on Fri Nov 22 21:54:26 2019
 
-@author: jgkim
+@author: Jack Kim
 """
 
 """
