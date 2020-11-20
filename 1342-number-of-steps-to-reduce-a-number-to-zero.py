@@ -31,5 +31,6 @@ print(S.numberOfSteps(num))
 
 """
 Submissions:
-Runtime: 28 ms, faster than 70.49% of Python3 online submissions for Number of Steps to Reduce a Number to Zero.
+Runtime: 28 ms, faster than 71.02% of Python3 online submissions for Number of Steps to Reduce a Number to Zero.
+Memory Usage: 13.8 MB, less than 100.00% of Python3 online submissions for Number of Steps to Reduce a Number to Zero.
 """
