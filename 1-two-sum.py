@@ -14,7 +14,7 @@ You can return the answer in any order.
 
 """
 
-class Solution:
+class Solution_1:
     def twoSum(self, nums:int, target:int) -> int:
         dic = {}
         for i,num in enumerate(nums):
@@ -22,14 +22,80 @@ class Solution:
                 return (dic[num],i)
             dic[target-num] = i
 
-S=Solution()
-nums=[2,11,7,15]
-target=9
-print(S.twoSum(nums, target))
-
 """
 Submissions:
 Runtime: 48 ms, faster than 77.68% of Python3 online submissions for Two Sum.
 Memory Usage: 14.4 MB, less than 100.00% of Python3 online submissions for Two Sum.
 
 """
+# Brute-Force 
+class Solution_2:
+    def twoSum(self, nums:int, target:int) -> int:
+        for i in range(len(nums)):
+            for j in range(i+1,len(nums)):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
+                
+"""
+Submisstions:
+Runtime: 44 ms, faster than 90.36% of Python3 online submissions for Two Sum.
+Memory Usage: 14.4 MB, less than 97.59% of Python3 online submissions for Two Sum.
+"""
+
+class Solution_3:
+    def twoSum(self, nums:int, target:int) -> int:
+        for i , n in enumerate(nums):
+            complement = target - n
+            if complement in nums[i+1:]:
+                return nums.index(n), nums[i+1:].index(complement) + (i+1)
+"""
+Submissions:
+Runtime: 36 ms, faster than 99.36% of Python3 online submissions for Two Sum.
+Memory Usage: 14.5 MB, less than 95.86% of Python3 online submissions for Two Sum.
+"""
+
+class Solution_4:
+    def twoSum(self, nums:int, target:int) -> int:
+        nums_map={}
+        for i, num in enumerate(nums):
+            nums_map[num]=i
+        
+        for i, num in enumerate(nums):
+            if target - num in nums_map and i != nums_map[target - num]:
+                return nums.index(num), nums_map[target - num]
+"""
+Submissions:
+Runtime: 52 ms, faster than 54.62% of Python3 online submissions for Two Sum.
+Memory Usage: 14.4 MB, less than 96.48% of Python3 online submissions for Two Sum.
+"""
+class Solution:
+    def twoSum(self, nums:int, target:int) -> int:
+        nums_map={}
+        for i, num in enumerate(nums):
+            if target - num in nums_map:
+                return [nums_map[target-num], i]
+            nums_map[num]=i
+            
+"""
+Submissions:
+Runtime: 48 ms, faster than 76.35% of Python3 online submissions for Two Sum.
+Memory Usage: 14.4 MB, less than 97.59% of Python3 online submissions for Two Sum.
+"""
+# Two Point has index issue
+#class Solution:
+#    def twoSum(self, nums:int, target:int) -> int:
+#        nums.sort()
+#        left,right = 0, len(nums) - 1
+#        while not left == right:
+#            if nums[left] + nums[right] < target:
+#                left += 1
+#            elif nums[left] + nums[right] > target:
+#                right -= 1
+#            else:
+#                return left, right
+        
+S=Solution()
+nums=[2,11,7,15]
+target=9
+print(S.twoSum(nums, target))
+
