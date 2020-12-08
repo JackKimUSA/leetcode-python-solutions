@@ -5,51 +5,16 @@ Created on Fri Nov 27 01:57:29 2020
 
 @author: Jack Kim
 """
-class Node:
-    def __init__ (self, data=None):
-        self.data=data
-        self.next=None
 
-n1 = Node('eggs')
-n2 = Node('ham')
-n3 = Node('spam')
+class DLLNode:
 
-n1.next = n2
-n2.next = n3
-
-current = n1
-while current:
-    print(current.data)
-    current = current.next
-
-# Singly Linked List Class
-#class SinglyLinkedList:
-#    def __int__ (self):
-#        self.tail = None
-#
-#    def append(self, data):
-#        node = Node(data)
-#        if self.tail == None:
-#            self.tail = node
-#        else:
-#            current = self.tail
-#            while current.next:
-#                current = current.next
-#            current.next = node
-#
-#words = SinglyLinkedList()
-#words.append('egg')
-#words.append('ham')
-#words.append('spam')
-
-
-class SLLNode:
     def __init__(self, data):
         self.data = data
         self.next = None
+        self.previous = None
 
     def __repr__(self):
-        return "SLLNode object: data={}".format(self.data)
+        return "DLLNode object: data={}".format(self.data)
 
     def get_data(self):
         """
@@ -75,26 +40,28 @@ class SLLNode:
         """
         self.next = new_next
 
-class SLL:
+    def get_previous(self):
+        """
+        Return the self.previous attribute
+        """
+        return self.previous
+
+    def set_previous(self, new_previous):
+        """
+        Replace the existing value of the self.previous attribute with
+        new_previous parameter.
+        """
+        self.previous = new_previous
+
+class DLL:
     def __init__(self):
-        self.head=None
+        self.head = None
 
     def __repr__(self):
-        return "SLL object: head{}".format(self.head)
+        return "<DLL object: head={}>".format(self.head)
 
     def is_empty(self):
-        """
-        Returns True if the Linked List is empty. Otherwise, returns False.
-        """
         return self.head is None
-
-    def add_front(self, new_data):
-        """
-        Add a Node whose data is the new_data argument to the front of the Linked List.
-        """
-        temp = SLLNode(new_data)
-        temp.set_next(self.head)
-        self.head= temp
 
     def size(self):
         """
@@ -132,35 +99,43 @@ class SLL:
 
         return False
 
+    def add_front(self,new_data):
+        """
+        Add a Node whose data is the new_data argument to the front of the Linked List.
+        """
+        temp = DLLNode(new_data)
+        temp.set_next(self.head)
+        if self.head is not None:
+            self.head.set_previous(temp)
+        self.head= temp
+
     def remove(self,data):
         """
-        Removes the first occurence of a Node that contains the data argument as its self.data
-        variable. Returns nothing.
+        Removes the first occurence of a Node that contains the data argument as its self.data attribute.
+        Returns nothing.
 
-        The time complexity is O(n) because in the worst case we have to visit every Node before
-        we find the one we need to remove.
+        The time complexity is O(n) because in the worst case, we have to visit every Node before finding the one
+        we want to remove.
         """
         if self.head is None:
             return "Linked List is empty. No Nodes to remove."
 
         current = self.head
-        previous = None
         found = False
+
         while not found:
             if current.get_data() == data:
                 found = True
             else:
-                if current.get_next() == None:
-                    return "A Node with that data value is not present."
+                if current.get_next() is None:
+                   return "A Node with that data value is not present"
                 else:
-                    previous = current
                     current = current.get_next()
 
-        if previous is None:
+        if current.previous is None:
             self.head = current.get_next()
         else:
-            previous.set_next(current.get_next())
+            current.previous.set_next(current.get_next())
+            current.next.set_previous(current.get_previous())
 
-
-
-
+    
