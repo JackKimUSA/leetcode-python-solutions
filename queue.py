@@ -56,6 +56,25 @@ class Queue:
         """
         return self.items == []
 
+    def __str__(self):
+        return str(self.items)
+
+if __name__ == "__main__":
+    q=Queue()
+    print(q)
+    print(q.is_empty())
+    q.enqueue('apple')
+    print(q)
+    q.enqueue('banana')
+    q.enqueue('carrot')
+    print(q)
+    print(q.dequeue())
+    print(q)
+    print(q.dequeue())
+    print(q)
+    print(q.size())
+    print(q.peek())
+
 import random
 
 class PrintQueue:

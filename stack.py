@@ -56,8 +56,28 @@ class Stack:
 
         Testing for equality happens in constant time.
         """
+        # return len(self.items) == 0
+        # return not self.items
         return self.items == []
 
+    def __str__(self):
+        return str(self.items)
+
+if __name__ == "__main__":
+    s = Stack()
+    print(s)
+    print(s.is_empty())
+    s.push('apple')
+    print(s)
+    s.push('banana')
+    s.push('carrot')
+    print(s)
+    print(s.pop())
+    print(s)
+    print(s.pop())
+    print(s)
+    print(s.peek())
+    print(s.size())
 
 def match_symbols(symbol_str):
     symbol_pairs= {
@@ -96,3 +116,17 @@ def match_symbols(symbol_str):
 print(match_symbols('([{}])'))
 print(match_symbols('(([{}]])'))
 
+def reversed_sting(input_str):
+    rev_string=""
+    s=Stack()
+
+    for char in input_str:
+        s.push(char)
+
+    while not s.is_empty():
+        rev_string += s.pop()
+
+    return rev_string
+
+input_str="1234567890"
+print(reversed_sting(input_str))
