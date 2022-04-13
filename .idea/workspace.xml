@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46790f48-9737-4ee1-a8a2-f1c7c738af4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/225-implement-stack-using-queues.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/23-merge-k-sorted-lists.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/232-implement-queue-using-stacks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/622-design-circular-queue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/641-design-circular-deque.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/739-daily-temperatures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/26-Remove-duplicates-from-sorted-array.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/316-remove-duplicate-letters.py" beforeDir="false" afterPath="$PROJECT_DIR$/316-remove-duplicate-letters.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,19 +12,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="leetcode-python-solutions" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/92-reverse-linked-list-II.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,6 +65,7 @@
     <option name="width" value="1280" />
     <option name="height" value="1365" />
   </component>
+  <component name="ProjectId" id="1s6sTVxGscGSTLtIDAZHDZPXRHM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -117,22 +98,16 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.23-merge-k-sorted-lists">
     <configuration name="225-implement-stack-using-queues" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -250,6 +225,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -296,6 +272,18 @@
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/aa.py" />
