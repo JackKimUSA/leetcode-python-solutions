@@ -13,13 +13,12 @@ Reverse a linked list from position m to n. Do it in one-pass.
 Note: 1 ≤ m ≤ n ≤ length of list.
 """
 
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
-class Solution:
+class Solution1:
     def reverseBetween(self, head: ListNode, m: int, n: int) -> ListNode:
         if not head or m == n:
             return head
@@ -38,8 +37,49 @@ class Solution:
 
 """
 Submissions:
-Runtime: 32 ms, faster than 56.76% of Python3 online submissions for Reverse Linked List II.
-Memory Usage: 14.6 MB, less than 6.89% of Python3 online submissions for Reverse Linked List II.
+Runtime 30 ms Beats 91.36% of users with Python3
+Memory 16.82 MB Beats 51.62% of users with Python3
+"""
+class Solution:
+    def reverseBetween(self, head: ListNode, left: int, right: int) -> ListNode:
+        arr = []
+        while head != None:
+            arr.append(head.val)
+            head = head.next
+
+        while left < right:
+            arr[left - 1], arr[right - 1] = arr[right - 1], arr[left - 1]
+            left += 1
+            right -= 1
+
+        def arrayToList(arr, n):
+            root = None
+            for i in range(0, n, 1):
+                root = insert(root, arr[i])
+
+            return root
+
+        def insert(root, value):
+            temp = ListNode(value)
+
+            if (root == None):
+                root = temp
+            else:
+                ptr = root
+                while (ptr.next != None):
+                    ptr = ptr.next
+                ptr.next = temp
+            return root
+
+        n = len(arr)
+        root = arrayToList(arr, n)
+
+        return root
+
+"""
+Submissions:
+Runtime 38 ms Beats 50.75% of users with Python3
+Memory 16.66 MB Beats 75.51% of users with Python3
 """
 node1 = ListNode(1)
 node2 = ListNode(2)
