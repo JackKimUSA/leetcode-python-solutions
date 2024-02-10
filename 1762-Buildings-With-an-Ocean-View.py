@@ -24,6 +24,11 @@ class Solution:
 
         return res[::-1]
 
+"""
+Submissions:
+Runtime 490 ms Beats 83.78% of users with Python3
+Memory 34.06 MB Beats 65.11% of users with Python3
+"""
 S=Solution()
 heights=[4,2,3,1]
 print(S.findBuildings(heights))
