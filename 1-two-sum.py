@@ -97,8 +97,8 @@ class Solution_6:
             
 """
 Submissions:
-Runtime: 48 ms, faster than 76.35% of Python3 online submissions for Two Sum.
-Memory Usage: 14.4 MB, less than 97.59% of Python3 online submissions for Two Sum.
+Runtime 62 ms Beats 63.37% of users with Python3
+Memory 17.82 MB Beats 57.69% of users with Python3
 """
 # Two Point has index issue
 #class Solution:
@@ -113,7 +113,22 @@ Memory Usage: 14.4 MB, less than 97.59% of Python3 online submissions for Two Su
 #            else:
 #                return left, right
 
-      
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        res = []
+        for i in range(len(nums)):
+            find = target - nums[i]
+            if find in nums[i+1:]:
+                res.append(i)
+                res.append(nums.index(find,i+1))
+                return res
+        return None
+
+"""
+Submissions:
+Runtime 340 ms Beats 39.98% of users with Python3
+Memory 17.49 MB Beats 81.69% of users with Python3
+"""
 S=Solution()
 nums=[2,11,7,15]
 target=9
