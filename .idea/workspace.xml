@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46790f48-9737-4ee1-a8a2-f1c7c738af4a" name="Default Changelist" comment="Solved 217">
+    <list default="true" id="46790f48-9737-4ee1-a8a2-f1c7c738af4a" name="Default Changelist" comment="Solved 1">
+      <change afterPath="$PROJECT_DIR$/242-Valid-Anagram.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-two-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/1-two-sum.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,7 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/junggyumkim/Documents/GitHub/leetcode-python-solutions&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.217-Contains-Duplicate">
+  <component name="RunManager" selected="Python.242-Valid-Anagram">
     <configuration name="1762-Buildings-With-an-Ocean-View" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="leetcode-python-solutions" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,7 +176,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="622-design-circular-queue" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="242-Valid-Anagram" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="leetcode-python-solutions" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -184,11 +184,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.9" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/622-design-circular-queue.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/242-Valid-Anagram.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -242,11 +243,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.242-Valid-Anagram" />
         <item itemvalue="Python.217-Contains-Duplicate" />
         <item itemvalue="Python.92-reverse-linked-list-II" />
         <item itemvalue="Python.1762-Buildings-With-an-Ocean-View" />
         <item itemvalue="Python.641-design-circular-deque" />
-        <item itemvalue="Python.622-design-circular-queue" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707554314433</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Solved 1">
+      <option name="closed" value="true" />
+      <created>1707629270633</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707629270633</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -345,7 +354,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Solved 1762" />
     <MESSAGE value="Solved 92" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved 92" />
+    <MESSAGE value="Solved 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved 1" />
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
